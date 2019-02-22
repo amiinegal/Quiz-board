@@ -7,9 +7,6 @@ $(document).ready(function() {
   var qN4 = $("input:radio[name=mine]:checked").val();
   var qN5 = $("input:radio[name=kal]:checked").val();
 
-  var yourScore = parseInt(qN1)+parseInt(qN2)+parseInt(qN3)+parseInt(qN4)+parseInt(qN5);
-    $("#yourScore").text("YOUR SCORE!!" + yourScore + " marks out of a possible 100 marks");
-
 
   $("form#formOne").slideUp();
   $("#yourScore").show();
