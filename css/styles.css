@@ -1,10 +1,25 @@
 .container{
-  background: #5f6a6a;
+  background: black;
+  margin-left:22%;
+  margin-right: 22%
+  padding-right:22%
+  padding-left:22%
+  margin-top:26%;
+  width:800px;
+  height: 2px;
+}
+.jumbotron{
+  padding-top: 15px;
+  margin-top:15px;
+  margin-left:14px;
+  margin-bottom: 20px;
+
 }
 .panel-body{
   background: #aeb6bf;
   margin:1%;
   padding: 1%;
+  height: 90px;
 }
 .panel-title{
 color: #0e6655;
@@ -14,4 +29,10 @@ div{
   color: black;
   text-decoration: none;
   text-align: justify;
+}
+body{
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://images.unsplash.com/photo-1517374784336-ca542b1df69a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+height: 10px;
 }
