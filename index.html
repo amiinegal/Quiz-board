@@ -1,94 +1,77 @@
-<html dir="ltr" lang="en">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
 <head>
-	<meta charset="utf-8">
-	<title></title>
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-	<link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jquery-3.3.1.js" charset="utf-8"></script>
+  <script src="js/script.js" charset="utf-8"></script>
+  <meta charset="utf-8">
+  <title></title>
 </head>
+
 <body>
-	<script src="js/jquery-3.3.1.js">
-	</script>
-	<script src="js/script.js">
-	</script>
-	<div class="container">
-		<div class="jumbotron">
-			<form id="formOne" name="formOne">
-				<h1>Questions</h1>
-        <h2>Choose the correct answer!!!</h2>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h3 class="panel-title">1.Which among these is a programming language?</h3>
-							</div>
-							<div class="panel-body">
-								<label> <input name="language" type="radio" value="css" > css<br></label><br>
-								<label> <input name="language" type="radio" value="Javascript" > JavaScript<br></label><br>
-								<label> <input name="language" type="radio" value="jQuery" > jQuery<br></label><br>
-                </div>
-                </div>
-                </div>
-                </div>
-								<div class="panel-footer"></div>
-								<div class="row">
-									<div class="col-md-12">
-										<div class="panel panel-default">
-											<div class="panel-heading">
-												<h3 class="panel-title">2.Who founded javascript?</h3>
-											</div>
-                      <div class="panel-body">
-												<label><input name="block" type="radio" value="Mark zukerberge"> Mark zukerberge<br></label><br>
-												<label><input name="block" type="radio" value="Jay z"> Jay z<br></label><br>
-												<label><input name="block" type="radio" value="Brendan Eich"> Brendan Eich</label><br>
-											</div>
-                      </div>
-                      </div>
-											<div class="panel-footer"></div>
-                      </div>
-											<div class="row">
-												<div class="col-md-12">
-													<div class="panel panel-default">
-														<div class="panel-heading">
-															<h3 class="panel-title">3.How many long does it take to learn javascript?</h3>
-														</div>
-														<div class="panel-body">
-															<label><input name="bdd" type="radio" value="one year">one year<br></label><br>
-															<label><input name="bdd" type="radio" value="one month">one month<br></label><br>
-															<label><input name="bdd" type="radio" value="five month"> five months</label><br>
-														</div>
-                              </div>
-                              </div>
-                              </div>
-														<div class="panel-footer"></div>
-														<div class="row">
-															<div class="col-md-12">
-																<div class="panel panel-default">
-																	<div class="panel-heading">
-																		<h3 class="panel-title">4.Do i need to know HTML to learn Javascript?</h3>
-																	</div>
-																	<div class="panel-body">
-																		<label><input name="mine" type="radio" value="YES">YES<br></label><br>
-																		<label><input name="mine" type="radio" value="NO">NO<br></label><br>
-																		<label><input name="mine" type="radio" value="NONE OF THE ABOVE"> NONE OF THE ABOVE</label><br>
-																	</div>
-                                  </div>
-                                  </div>
-                                  </div>
-																	<div class="panel-footer"></div>
-																	<div class="row">
-																		<div class="col-md-12">
-																			<div class="panel panel-default">
-																				<div class="panel-heading">
-																					<h3 class="panel-title">5.What is the official name for JavaScript?</h3>
-																				</div>
-																				<div class="panel-body">
-																					<label><input name="kal" type="radio" value="livescript">livescript<br></label><br>
-																					<label><input name="kal" type="radio" value="jumbotron">jumbotron<br></label><br>
-																				<label><input name="kal" type="radio" value="ECMAScript">ECMAScript</label><br>
-																				</div>
-																				<div class="panel-footer"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <h3 class="quiz-board-title">Quiz For javaScript!</h3>
+        <p>This is a project that <strong>interview</strong> users with questions about javaScript, where one can answer with the help of multiple choices, one correct answer is equal to 20%.javaScript is fun so hope you all overcome the challenges
+          ahead.</p>
+        <div class="quiz-board">
+          <form id="javascript-quiz">
+            <div class="form-group">
+              <label for="text">Name</label><input type="text" id="Name" class="form-control" size="20" required>
+            </div>
 
-			</form>
-
+            <div>
+              <label for="text">class</label><input type="text" id="class" class="form-control" size="20" required>
+            </div>
+            <div><br>
+              <label for="email">Enter your gmail acccount:</label><input type="email" id="email" pattern=".+@gmail.com" size="30" required>
+            </div>
+            <p>1) Who introduced JavaScript to the world?<br>
+              <input type="radio" name="answerOne" value="Steve Jobs">Steve Jobs.<br>
+              <input type="radio" name="answerOne" value="Brendan Eich">Brendan Eich.<br>
+              <input type="radio" name="answerOne" value="Jay Z">Jay Z.<br>
+              <input type="radio" name="answerOne" value="Barack Obama">Barack Obama.<br>
+            </p>
+            <p>2) Are Attributes and Property the same?<br>
+              <input type="radio" name="answerTwo" value="Yes">Yes.<br>
+              <input type="radio" name="answerTwo" value="Maybe">Maybe.<br>
+              <input type="radio" name="answerTwo" value="NO">NO.<br>
+              <input type="radio" name="answerTwo" value="Non of the above">Non of the above.<br>
+            </p>
+            <p>3) Which capitalization style is used to name Variables?<br>
+              <input type="radio" name="answerThree" value="Lower camelcase">Lower camelcase.<br>
+              <input type="radio" name="answerThree" value="Upper horsecase">Upper horsecase.<br>
+              <input type="radio" name="answerThree" value="Middle cowcase">Middle cowcase.<br>
+              <input type="radio" name="answerThree" value="Upper goatcase">Upper goatcase.<br>
+            </p>
+            <p>4) What does a typeof operator do?<br>
+              <input type="radio" name="answerFour" value="The operator typeof gives the type of a variable/data available in it.">The operator typeof gives the type of a variable/data available in it.<br>
+              <input type="radio" name="answerFour" value="its the source of code">its the source of code.<br>
+              <input type="radio" name="answerFour" value="Sentence">Sentence.<br>
+              <input type="radio" name="answerFour" value=" to convert from one data type to another data type."> to convert from one data type to another data type.<br>
+            </p>
+            <p>5) In whaich year was Javascript founded?<br>
+              <input type="radio" name="answerFive" value="1900">1900.<br>
+              <input type="radio" name="answerFive" value="1995">1995.<br>
+              <input type="radio" name="answerFive" value="1993">1993.<br>
+              <input type="radio" name="answerFive" value="1978">1978.<br>
+            </p>
+            <div id='unattemptedQuestions'></div>
+            <button type="submit" class="button" onclick="">Submit</button>
+          </form>
+        </div>
+        <div id='display-results' class="display-results"></div>
+        <div id="retake">
+          <a class="button" href="index.html">Retake Quiz</a>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  </div>
 </body>
+
 </html>
