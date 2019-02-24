@@ -1,16 +1,54 @@
+var answers = ["Brendan Eich", "JavaScript", "ECMAScript", "jquery", "1995"];
+var awardedPoints = 20;
+
+
+function total(score) {
+  return "Your score is " + score;
+}
+
 $(document).ready(function() {
-
-  $("form#formOne").submit(function(event){
-  var qN1 = $("input:radio[name=language]:checked").val();
-  var qN2 = $("input:radio[name=block]:checked").val();
-  var qN3 = $("input:radio[name=bdd]:checked").val();
-  var qN4 = $("input:radio[name=mine]:checked").val();
-  var qN5 = $("input:radio[name=kal]:checked").val();
+  $("#javascript-quiz").submit(function(event) {
 
 
-  $("form#formOne").slideUp();
-  $("#yourScore").show();
+    $('#display-results').text('');
+    var score = 0;
+    var answerOne = ($("input[type=radio][name=answerOne]:checked").val());
+    var answerTwo = ($("input[type=radio][name=answerTwo]:checked").val());
+    var answerThree = ($("input[type=radio][name=answerThree]:checked").val());
+    var answerFour = ($("input[type=radio][name=answerFour]:checked").val());
+    var answerFive = ($("input[type=radio][name=answerFive]:checked").val());
+
+    if (answerOne === undefined || answerTwo === undefined || answerThree === undefined || answerFour === undefined || answerFive === undefined) {
+      $('#unattemptedQuestions').text('Please attempt all questions.');
+      $('#unattemptedQuestions').toggle(10000);
+    } else {
+      if (answerOne === answers[0]); {
+        score += awardedPoints;
+      }
+      if (answerTwo === answers[1]); {
+        score += awardedPoints;
+      }
+      if (answerThree === answers[2]); {
+        score += awardedPoints;
+      }
+      if (answerFour === answers[3]); {
+        score += awardedPoints;
+      }
+      if (answerFive === answers[4]); {
+        score += awardedPoints;
+      }
+
+
+      $("input[type=radio][name=answerOne]:checked").prop('checked', false);
+      $("input[type=radio][name=answerTwo]:checked").prop('checked', false);
+      $("input[type=radio][name=answerThree]:checked").prop('checked', false);
+      $("input[type=radio][name=answerFour]:checked").prop('checked', false);
+      $("input[type=radio][name=answerFive]:checked").prop('checked', false);
+      $('#unattemptedQuestions').text('');
+      $(".quiz-board").fadeOut(10);
+      $('#display-results').text(total(score));
+      document.getElementById("display-results").style.visibility = "visible";
+      document.getElementById("retake").style.visibility = "visible";
+    }
     event.preventDefault();
-   });
-
-});
+  });
