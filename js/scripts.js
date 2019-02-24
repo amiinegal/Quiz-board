@@ -1,4 +1,4 @@
-var answers = ["Brendan Eich", "JavaScript", "ECMAScript", "jquery", "1995"];
+var answers = ["Brendan Eich", "NO", "python", "jquery", "1995"];
 var awardedPoints = 20;
 
 
