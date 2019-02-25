@@ -1,3 +1,4 @@
+  // user interface logic....
 var answers = ["Brendan Eich", "python", "ECMASCRIPT", "The operator typeof gives the type of a variable/data available in it.", "1995"];
 var awardedPoints = 20;
 
@@ -37,7 +38,7 @@ $(document).ready(function() {
       if (answerFive === answers[4]) {
         score += awardedPoints;
       }
-
+      //busines logic interface.....
 
       $("input[type=radio][name=answerOne]:checked").prop('checked', false);
       $("input[type=radio][name=answerTwo]:checked").prop('checked', false);
