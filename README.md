@@ -8,12 +8,11 @@ Amin adan egal.
 # Behavior Driven Development
 ## Website Specifications
 ### Behaviour	Specification
-1.
-Have a Quiz with multiple choices	Only one correct choice has 20 marks.
-2.
-Tally all marks attained Add all individual marks.
-3.
-Give back a response	Total of all fields.
+
+1. Have a Quiz with multiple choices	Only one correct choice has (20 marks.)
+
+2. Tally all marks attained Add all individual marks.
+3. Give back a response	Total of all fields.
 ## Technologies Used
 HTML .
  CSS .
