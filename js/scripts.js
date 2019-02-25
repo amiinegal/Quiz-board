@@ -1,4 +1,4 @@
-var answers = ["Brendan Eich", "NO", "python", "jquery", "1995"];
+var answers = ["Brendan Eich", "python", "ECMASCRIPT", "The operator typeof gives the type of a variable/data available in it.", "1995"];
 var awardedPoints = 20;
 
 
@@ -22,19 +22,19 @@ $(document).ready(function() {
       $('#unattemptedQuestions').text('Please attempt all questions.');
       $('#unattemptedQuestions').toggle(10000);
     } else {
-      if (answerOne === answers[0]); {
+      if (answerOne === answers[0]) {
         score += awardedPoints;
       }
-      if (answerTwo === answers[1]); {
+      if (answerTwo === answers[1]) {
         score += awardedPoints;
       }
-      if (answerThree === answers[2]); {
+      if (answerThree === answers[2]) {
         score += awardedPoints;
       }
-      if (answerFour === answers[3]); {
+      if (answerFour === answers[3]) {
         score += awardedPoints;
       }
-      if (answerFive === answers[4]); {
+      if (answerFive === answers[4]) {
         score += awardedPoints;
       }
 
@@ -52,3 +52,4 @@ $(document).ready(function() {
     }
     event.preventDefault();
   });
+});
