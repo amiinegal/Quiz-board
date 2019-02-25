@@ -9,21 +9,18 @@
   height: 2px;
 }
 
-}
-.panel-title{
-color: #0e6655;
-
-}
 div{
-  color: #c0392b;
+  color:  black;
   text-decoration: underline;
   text-align: justify;
   text-decoration-style: solid;
+  font-family: monospace;
 }
 body{
   background-size: cover;
   background-position: center;
-  background-image: url(https://images.unsplash.com/photo-1518133910546-b6c2fb7d79e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60);
+  background-image: url(https://images.unsplash.com/photo-1508615039623-a25605d2b022?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60);
+  
 height: 10px;
 }
 .button{
